@@ -1,0 +1,37 @@
+{
+  "name": "partner-registration-functional-nightwatch-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests": "node node_modules/selenium-standalone/bin/selenium-standalone install",
+    "precommit": "lint-staged",
+    "start": "node nightwatch.js tests --reporter html-reporter.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "got": "^6.7.1",
+    "handlebars": "^4.0.10",
+    "moment": "^2.18.1",
+    "nightwatch": "^0.9.19",
+    "nightwatch-html-reporter": "^0.3.1",
+    "randomstring": "^1.1.5",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.0",
+    "selenium-standalone": "^6.4.1"
+  },
+  "keywords": [
+    "nightwatch",
+    "nightwatchjs",
+    "reporter",
+    "generator",
+    "report generator",
+    "html reporter",
+    "custom reporter"
+  ],
+  "preferGlobal": "true",
+  "bin": {
+    "nightwatch-html-reporter": "lib/cli.js"
+  }
+}
